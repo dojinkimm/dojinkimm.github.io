@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Django Tutorial 2] App, Model 만들기, settings.py 설정 변경 및 DB에 App 추가하기"
-date: 2019-08-24 17:00:00
+date: 2019-08-04 17:00:00
 author: Dojin Kim
 categories: Django
 tags: django python
