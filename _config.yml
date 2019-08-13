@@ -54,24 +54,6 @@ descriptions:
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
-# - cat: git
-#   desc: "Git"
-
-# - cat: blockchain
-#     desc: "Blockchain technology"
-
-# - cat: flutter
-#     desc: "Flutter"
-
-# - cat: cv
-#     desc: "Computer Vision"
-
-# - cat: python
-#     desc: "Python"
-
-# - cat: django
-#   desc: "Django"
-
 # Social icons and sharing options
 #
 # Social settings are used in two places:
@@ -90,29 +72,29 @@ descriptions:
 social:
   - name: Twitter
     icon: twitter
-    username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    username: 
+    url: 
     desc: Follow me on Twitter
     share: true
 
   - name: Facebook
     icon: facebook
     username: dojin1
-    url:
+    url: https://www.facebook.com/dojin1
     desc: Friend me on Facebook
     share: true
 
   - name: GitHub
     icon: github
-    username: bencentra
+    username: dojinkimm
     url: https://github.com/dojinkimm
     desc: Fork me on GitHub
     share: false
 
   - name: LinkedIn
     icon: linkedin
-    username: 
-    url: 
+    username: dojin-henry-kim
+    url: https://www.linkedin.com/in/dojin-henry-kim-64080a158/
     desc: Connect with me on LinkedIn
     share: true
 

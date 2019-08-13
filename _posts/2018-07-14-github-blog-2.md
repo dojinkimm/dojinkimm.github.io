@@ -3,6 +3,7 @@ layout: post
 title: "[Git] Tutorial 2 - Building github blog in 15 minutes"
 date: 2018-07-14 18:00:00
 categories: Git
+tags: github git blog jekyll
 ---
 
 This is Tutorial 2: creating a github blog. **Those who do have same result with original style skip to Step 2 ** Those who have different result read from step 1 :)
