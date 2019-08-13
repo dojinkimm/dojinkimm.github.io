@@ -9,13 +9,12 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Henry Study Blog
-subtitle: "Henry Study Blog"
+title: Henry Study
+subtitle: "A simple yet classy theme for your Jekyll website or blog"
 email: dojinkim119@gmail.com
-name: Dojin
+name: Kim Dojin
 description: >
-  Study Everyday
-# 하루하루 배우고 느낀 것을 기록하는 스터디 블로그
+  A simple yet classy theme for your Jekyll website or blog.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -55,23 +54,23 @@ descriptions:
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
-  - cat: git
-    desc: "Git"
+# - cat: git
+#   desc: "Git"
 
-  - cat: blockchain
-      desc: "Blockchain technology"
+# - cat: blockchain
+#     desc: "Blockchain technology"
 
-  # - cat: flutter
-  #     desc: "Flutter"
+# - cat: flutter
+#     desc: "Flutter"
 
-  # - cat: cv
-  #     desc: "Computer Vision"
+# - cat: cv
+#     desc: "Computer Vision"
 
-  # - cat: python
-  #     desc: "Python"
+# - cat: python
+#     desc: "Python"
 
-  # - cat: django
-  #   desc: "Django"
+# - cat: django
+#   desc: "Django"
 
 # Social icons and sharing options
 #
@@ -80,12 +79,19 @@ descriptions:
 # * After each blog post for sharing widgets
 #
 # Example:
-#
+
+# social:
+#   - name: Twitter                         # Name of the service
+#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
+#     username: "@TheBenCentra"             # (User) Name to display in the footer link
+#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
+#     desc: Follow me on Twitter            # Description to display as link title, etc
+#     share: true                           # Include in the "Share" section of posts
 social:
   - name: Twitter
     icon: twitter
-    username: 
-    url: 
+    username: TheBenCentra
+    url: https://twitter.com/TheBenCentra
     desc: Follow me on Twitter
     share: true
 
