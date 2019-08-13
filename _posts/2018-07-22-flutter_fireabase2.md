@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Flutter] Google Sign in with Flutter #2"
-date: 2018-07-22 14:00:00
+date: 2018-07-22 13:00:00
 author: Dojin Kim
 categories: Flutter
 tags: flutter mobile anroid ios
@@ -28,11 +28,11 @@ GoogleSignIn _googleSignIn = new GoogleSignIn(
 );
 
 ```
-<img src="{{ site.baseurl }}/assets/img/flutter/fb15.png"/>
+<img src="{{ site.baseurl }}/assets/imgs/flutter/fb15.png"/>
 
 
 <h5>3. _MyHomePageState 부분에서 코드를 다음과 같이 수정한다</h5>
-<img src="{{ site.baseurl }}/assets/img/flutter/fb14.png"/>
+<img src="{{ site.baseurl }}/assets/imgs/flutter/fb14.png"/>
 
 
 <h5>4. 밑의 코드를 작성한다.</h5>
@@ -47,7 +47,7 @@ Future<Null> _handleSignIn() async{
   	}
 }
 ```
-<img src="{{ site.baseurl }}/assets/img/flutter/fb16.png"/>
+<img src="{{ site.baseurl }}/assets/imgs/flutter/fb16.png"/>
 
 
 <br><br>
@@ -55,7 +55,7 @@ Future<Null> _handleSignIn() async{
 - 이때 emulator는 google play store을 사용할 수 있는 버전이어야 한다.
 
 <h5>1. 우측 하단의 (+) 사인을 누르면 구글로그인이 가능하게 된다.</h5>
-<img src="{{ site.baseurl }}/assets/img/flutter/fb17.png"/>
+<img src="{{ site.baseurl }}/assets/imgs/flutter/fb17.png"/>
 
 
 <h5>이것으로 Firebase와 Flutter를 사용해서 Google Login이 가능하게 되었다.</h5>

@@ -3,7 +3,7 @@ layout: post
 title: "Level 1 - 가운데 글자 가져오기"
 date: 2018-07-26 16:00:00
 author: Dojin Kim
-categories: Problem Solving
+categories: Problem_Solving
 tags: ps algorithm
 cover:  "/assets/instacode.png"
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Level 1 - 서울에서 김서방 찾기"
 date: 2018-07-27 15:00:00
 author: Dojin Kim
-categories: Problem Solving
+categories: Problem_Solving
 tags: ps algorithm
 cover:  "/assets/instacode.png"
 ---

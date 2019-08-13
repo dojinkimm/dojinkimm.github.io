@@ -3,7 +3,7 @@ layout: post
 title: "Level 1 - 정수 내림차순 구하기"
 date: 2018-07-28 12:00:00
 author: Dojin Kim
-categories: Problem Solving
+categories: Problem_Solving
 tags: ps algorithm
 cover:  "/assets/instacode.png"
 ---

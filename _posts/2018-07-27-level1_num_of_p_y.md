@@ -3,7 +3,7 @@ layout: post
 title: "Level 1 - 문자열 내 p와 y의 개수"
 date: 2018-07-27 19:00:00
 author: Dojin Kim
-categories: Problem Solving
+categories: Problem_Solving
 tags: ps algorithm
 cover:  "/assets/instacode.png"
 ---
