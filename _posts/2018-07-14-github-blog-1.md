@@ -20,7 +20,7 @@ tags: github git blog jekyll
 - Note that your **username** will be the **address** of your github blog. So, carefully think of your username. For example) My username is dojinkimm, then my blog address will be dojinkimm.github.io!!!
 
 2) Sign In
-<img src="dojinkimm.github.io/assets/img/github/gitpage.png"/>
+<img src="{{ site.baseurl }}/assets/imgs/github/gitpage.png"/>
 
 
 
@@ -30,19 +30,19 @@ tags: github git blog jekyll
 
 1) Go to  @[http://jekyllthemes.org/](http://jekyllthemes.org/)
 
-<img src="dojinkimm.github.io/assets/img/github/jekylltheme.png"/>
+<img src="{{site.url}}/assets/imgs/github/jekylltheme.png"/>
 
 
 2) Find a blog style that you like and click it (I am using hydejack so I will click it)
 
 3) Check if it is MIT License and click **Homepage**
 
-<img src="dojinkimm.github.io/assets/img/github/hydejack.png"/>
+<img src="{{site.url}}/assets/imgs/github/hydejack.png"/>
 
 
 4) Click a **fork** button that is in top right corner, and wait a little.
 
-<img src="dojinkimm.github.io/assets/img/github/fork.png"/>
+<img src="{{site.url}}/assets/imgs/github/fork.png"/>
 
 
 
@@ -51,16 +51,16 @@ tags: github git blog jekyll
 
 1) Go to Settings
 
-<img src="dojinkimm.github.io/assets/img/github/forked.png"/>
+<img src="{{site.url}}/assets/imgs/github/forked.png"/>
 
 2) Change a name so that it will be [your_username.github.io] (no need brackets)
 
-<img src="dojinkimm.github.io/assets/img/github/changename.png"/>
+<img src="{{site.url}}/assets/imgs/github/changename.png"/>
 
 
 3) Wait a minute and type [your_username.github.io] in your browser.
 
-<img src="dojinkimm.github.io/assets/img/github/gosite.png"/>
+<img src="{{site.url}}/assets/imgs/github/gosite.png"/>
 
 <br><br>
 Now you created your own github blog!!! **Congratulations**
