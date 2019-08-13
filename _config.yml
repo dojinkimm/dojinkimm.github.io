@@ -12,7 +12,7 @@ exclude:
 title: Henry Study Blog
 subtitle: "Henry Study Blog"
 email: dojinkim119@gmail.com
-name: Kim Dojin
+name: Dojin
 description: >
   Study Everyday
 # 하루하루 배우고 느낀 것을 기록하는 스터디 블로그
@@ -61,17 +61,17 @@ descriptions:
   - cat: blockchain
       desc: "Blockchain technology"
 
-  - cat: flutter
-      desc: "Flutter"
+  # - cat: flutter
+  #     desc: "Flutter"
 
-  - cat: cv
-      desc: "Computer Vision"
+  # - cat: cv
+  #     desc: "Computer Vision"
 
-  - cat: python
-      desc: "Python"
+  # - cat: python
+  #     desc: "Python"
 
-  - cat: django
-    desc: "Django"
+  # - cat: django
+  #   desc: "Django"
 
 # Social icons and sharing options
 #
@@ -81,13 +81,6 @@ descriptions:
 #
 # Example:
 #
-# social:
-  - name: Twitter                         # Name of the service
-    icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
-    username:                             # (User) Name to display in the footer link
-    url:                                  # URL of your profile (leave blank to not display in footer)
-    desc: Follow me on Twitter            # Description to display as link title, etc
-    share: true                           # Include in the "Share" section of posts
 social:
   # - name: Twitter
   #   icon: twitter
