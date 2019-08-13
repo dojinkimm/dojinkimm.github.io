@@ -82,12 +82,12 @@ descriptions:
 # Example:
 #
 social:
-  # - name: Twitter
-  #   icon: twitter
-  #   username: TheBenCentra
-  #   url: https://twitter.com/TheBenCentra
-  #   desc: Follow me on Twitter
-  #   share: true
+  - name: Twitter
+    icon: twitter
+    username: 
+    url: 
+    desc: Follow me on Twitter
+    share: true
 
   - name: Facebook
     icon: facebook
@@ -105,8 +105,8 @@ social:
 
   - name: LinkedIn
     icon: linkedin
-    username: Ben Centra
-    url: https://www.linkedin.com/in/dojin-henry-kim-64080a158/
+    username: 
+    url: 
     desc: Connect with me on LinkedIn
     share: true
 

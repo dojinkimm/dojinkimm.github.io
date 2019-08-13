@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="{{ site.baseurl }}/assets/profile.jpg" title="Profile Picture" class="profile">
+<img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile">
 
 배우는 것과 도전을 좋아하는 SW engineer입니다.
 
