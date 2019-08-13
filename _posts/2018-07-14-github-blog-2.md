@@ -8,10 +8,10 @@ tags: github git blog jekyll
 cover:  "/assets/imgs/github/gitpage.png"
 ---
 
-This is Tutorial 2: creating a github blog. **Those who do have same result with original style skip to Step 2 ** Those who have different result read from step 1 :)
+This is Tutorial 2: creating a github blog. <strong>Those who do have same result with original style skip to Step 2 </strong>Those who have different result read from step 1 :)
 
 
-**We have Problem in configuration **
+<strong></strong>We have Problem in configuration</strong>
 
 <h2>Step 1: Go to _config.yml</h2>
 
@@ -52,7 +52,7 @@ I will show how to upload posts using markdown editor. I recommend **Typora** fo
 
 4) If you install you will see following screen.
 - Click a blue button that is on bottom right.It will show how you can add hyperlinks, make fonts bigger, emphasize and etc.
-- For example) Writing ******Bing****** will make the word bold like this - **Bing**
+- For example) Writing **Bing** will make the word bold like this - **Bing**
 <img src="{{ site.baseurl }}/assets/imgs/github/hpad.png"/>
 
 
