@@ -5,6 +5,8 @@ date: 2018-07-14 13:00:00
 author: Dojin Kim
 categories: Git
 tags: github git blog jekyll
+cover:  "/assets/imgs/github/github.png"
+comments: true
 ---
 
 <p>Today I will explain about how to create a github blog. If you follow my instructions well, you will be able to create your own github blog in **15 minutes**. I am also not an expert in this field, but I want to help people who are in complete beginner's stage than me. </p>
