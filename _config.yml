@@ -54,11 +54,11 @@ descriptions:
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
-# - cat: git
-#   desc: "Git"
+- cat: git
+  desc: "Git"
 
-# - cat: blockchain
-#     desc: "Blockchain technology"
+- cat: blockchain
+    desc: "Blockchain technology"
 
 # - cat: flutter
 #     desc: "Flutter"

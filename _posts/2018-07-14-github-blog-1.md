@@ -2,6 +2,7 @@
 layout: post
 title: "[Git] Tutorial 1 - Building github blog in 15 minutes"
 date: 2018-07-14 13:00:00
+author: Dojin Kim
 categories: Git
 ---
 <p>Today I will explain about how to create a github blog. If you follow my instructions well, you will be able to create your own github blog in **15 minutes**. I am also not an expert in this field, but I want to help people who are in complete beginner's stage than me. </p>
@@ -17,8 +18,7 @@ categories: Git
 - Note that your **username** will be the **address** of your github blog. So, carefully think of your username. For example) My username is dojinkimm, then my blog address will be dojinkimm.github.io!!!
 
 2) Sign In
-![Gitpage](../assets/img/github/gitpage.png)
-
+<img src="../assets/img/github/gitpage.png"/>
 
 
 
@@ -28,21 +28,19 @@ categories: Git
 
 1) Go to  @[http://jekyllthemes.org/](http://jekyllthemes.org/)
 
-![Jekylltheme](../assets/img/github/jekylltheme.png)
-
+<img src="../assets/img/github/jekylltheme.png"/>
 
 
 2) Find a blog style that you like and click it (I am using hydejack so I will click it)
 
 3) Check if it is MIT License and click **Homepage**
 
-![Hydejack](../assets/img/github/hydejack.png)
+<img src="../assets/img/github/hydejack.png"/>
 
 
 4) Click a **fork** button that is in top right corner, and wait a little.
 
-![fork](../assets/img/github/fork.png)
-
+<img src="../assets/img/github/fork.png"/>
 
 
 
