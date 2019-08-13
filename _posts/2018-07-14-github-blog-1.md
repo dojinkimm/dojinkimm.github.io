@@ -17,7 +17,7 @@ categories: Git
 - Note that your **username** will be the **address** of your github blog. So, carefully think of your username. For example) My username is dojinkimm, then my blog address will be dojinkimm.github.io!!!
 
 2) Sign In
-<img src="../assets/img/github/gitpage.png"/>
+![Gitpage](../assets/img/github/gitpage.png)
 
 
 
@@ -28,7 +28,7 @@ categories: Git
 
 1) Go to  @[http://jekyllthemes.org/](http://jekyllthemes.org/)
 
-<img src="../assets/img/github/jekylltheme.png"/>
+![Jekylltheme](../assets/img/github/jekylltheme.png)
 
 
 
@@ -36,12 +36,12 @@ categories: Git
 
 3) Check if it is MIT License and click **Homepage**
 
-<img src="../assets/img/github/hydejack.png"/>
+![Hydejack](../assets/img/github/hydejack.png)
 
 
 4) Click a **fork** button that is in top right corner, and wait a little.
 
-<img src="../assets/img/github/fork.png"/>
+![fork](../assets/img/github/fork.png)
 
 
 

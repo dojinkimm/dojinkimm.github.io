@@ -14,7 +14,8 @@ subtitle: "Henry Study Blog"
 email: dojinkim119@gmail.com
 name: Kim Dojin
 description: >
-  하루하루 배우고 느낀 것을 기록하는 스터디 블로그
+  Study Everyday
+# 하루하루 배우고 느낀 것을 기록하는 스터디 블로그
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
