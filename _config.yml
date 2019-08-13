@@ -44,7 +44,7 @@ jekyll-archives:
 disqus_shortname:  dojinkimm
 
 # Google analytics
-# ga_tracking_id: "UA-144230876-1"
+ga_tracking_id: "UA-144230876-1"
 
 # Category descriptions (for archive pages)
 descriptions:

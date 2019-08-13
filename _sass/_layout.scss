@@ -286,8 +286,8 @@ pre code.hljs {
 			@include span-columns(12);
 			@include media ($tablet) {
 				@include span-columns(6);
-				margin: 1em 0;
-				text-align: right;
+				margin: 0 0;
+				text-align: left;
 			}
 			a {
 				width: 1em;
