@@ -40,7 +40,7 @@ cover:  "/assets/imgs/flutter/flutter_cover.png"
 <img src="{{ site.baseurl }}/assets/imgs/flutter/fb3.png"/>
 
 <h5>8. 복사한 부분을 터미널에 붙혀놓기를 하고 비밀번호는 "android" 혹은 그냥 Enter를 치면 다음과 같은 화면이 나온다. </h5>
-- SHA1: 뒤에 부분을 복사를 하고 firabse 사이트로 들어가서 붙혀놓기를 한다.
+- 빨간색으로 되어 있는 SHA1: 뒤에 부분을 복사를 하고 firabse 사이트로 들어가서 붙혀놓기를 한다.
 - 다음을 눌러서 다음 페이지로 넘어간다.
 <img src="{{ site.baseurl }}/assets/imgs/flutter/fb4.png"/>
 <img src="{{ site.baseurl }}/assets/imgs/flutter/fb6.png"/>
@@ -50,7 +50,7 @@ cover:  "/assets/imgs/flutter/flutter_cover.png"
 <h5>1. 파일을 다운로드 한다.</h5>
 <img src="{{ site.baseurl }}/assets/imgs/flutter/fb7.png"/>
 <h5>2. 다운로드 한 파일을 android/app 폴더에 복사를 한다.</h5>
-<img src="{{ site.baseurl }}/assets/imgs/flutter/fb8.png"/>
+<img src="{{ site.baseurl }}/assets/imgs/flutter/fb9.png"/>
 
 
 
