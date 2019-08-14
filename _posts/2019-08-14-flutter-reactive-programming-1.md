@@ -5,7 +5,7 @@ date: 2019-08-14 17:00:00
 author: Dojin Kim
 categories: Flutter
 tags: flutter reactx BLoC
-cover:  "/assets/imgs/flutter/flutter_cover.jpeg"
+cover:  "/assets/imgs/flutter/flutter_cover.png"
 ---
 
 
@@ -37,7 +37,7 @@ Streams, Bloc 그리고 Reactive Programming에 대한 개념, 이론과 예시�
 
 Flutter에서,
 
-- 이 파이프를 `**Stream**` 이라 부르고,
+- 이 파이프를 **`Stream`** 이라 부르고,
 - Stream을 control(조정)하기 위해서 주로(*) **`StreamController`**가 사용되고,
 - 무언가를 Stream에 삽입하기 위해, StreamController가 **`sink`** property로 접근 가능한 StreamSink라는 "_entrance_"를 사용하고,
 - Stream의 결과(출력)는  StreamContoller의 **`stream`** property로 접근 가능하다.
@@ -92,7 +92,7 @@ StreamTransformer가 할 수 있는 processing의 종류는 다음과 같다:
 
 2 종류의 Streams가 있다.
 
-1. **Single-subscription Streams**
+1) **Single-subscription Streams**
 
 : Stream의 lifetime(생명주기)동안 `single` (한개)의 listener만 허용한다.
 
@@ -100,7 +100,7 @@ StreamTransformer가 할 수 있는 processing의 종류는 다음과 같다:
 
  
 
-2. **Broadcast Streams**
+2) **Broadcast Streams**
 
 : `any number` (여러개)의 listener를 허용한다.
 
@@ -112,13 +112,13 @@ StreamTransformer가 할 수 있는 processing의 종류는 다음과 같다:
 
 “*Single-subscription*” *Stream*에 대한 예시이다. 이 Stream은 단순히 input을 print한다. 예시를 보면 알 수 있듯이 어떠한 type이 와도 상관이 없다.
 
-<script src="[https://gist.github.com/boeledi/d8e01dbb0e1bac1645846e66bcd85a1f.js](https://gist.github.com/boeledi/d8e01dbb0e1bac1645846e66bcd85a1f.js)"></script>
+<script src="https://gist.github.com/boeledi/d8e01dbb0e1bac1645846e66bcd85a1f.js"></script>
 
 **StreamTransformer**
 
 두 번째 예시는 “*Broadcast*” *Stream*을 보여준다. *integer* 값들만 전달하고 그 중에서도 짝수만 print를 한다. 이러한 결과물을 내오기 위해서는 S*treamTransformer* 를 사용해서 값들을 filter (line #14)하고 짝수만 전달될 수 있게 한다. 
 
-<script src="[https://gist.github.com/boeledi/d8e01dbb0e1bac1645846e66bcd85a1f.js](https://gist.github.com/boeledi/d8e01dbb0e1bac1645846e66bcd85a1f.js)"></script>
+<script src="https://gist.github.com/boeledi/d8e01dbb0e1bac1645846e66bcd85a1f.js"></script>
 
 ### **RxDart**
 
@@ -128,11 +128,11 @@ StreamTransformer가 할 수 있는 processing의 종류는 다음과 같다:
 
 Google에서 정의된 개념이 아니기 때문에 다른 단어들을 사용한다. 밑에 table은 Dart의 단어들이 RxDart에서 어떻게 표현되는지 보여준다. 
 
-<script src="[https://gist.github.com/boeledi/43688ebd54fa52ec1150a8be5d32e2ad.js](https://gist.github.com/boeledi/43688ebd54fa52ec1150a8be5d32e2ad.js)"></script>
+<script src="https://gist.github.com/boeledi/43688ebd54fa52ec1150a8be5d32e2ad.js"></script>
 
 RxDart는 기존 Dart Streams API를 `extends` 하고 StreamController의 3가지의 변형을 제공한다:
 
-1. **PublishSubject**
+1) **PublishSubject**
 
 **[PublishSubject](https://pub.dartlang.org/documentation/rxdart/latest/rx/PublishSubject-class.html)** 는 일반적인 **broadcast** *StreamController* 인데, 한 가지 예외 사항이 있다: **stream**은 **Stream** 말고 **[Observable](https://pub.dartlang.org/documentation/rxdart/latest/rx/Observable-class.html)** 을 리턴한다.
 
@@ -140,7 +140,7 @@ RxDart는 기존 Dart Streams API를 `extends` 하고 StreamController의 3가�
 
 그림에서 보면, *PublishSubject* 는 *subscription* 이후에 들어오는 *events* 들만 *listener*에게 보낸다.
 
-2. **BehaviorSubject**
+2) **BehaviorSubject**
 
 **[BehaviorSubject](https://pub.dartlang.org/documentation/rxdart/latest/rx/BehaviorSubject-class.html)** 도 **broadcast** *StreamController*이고  **Stream** 대신에 **[Observable](https://pub.dartlang.org/documentation/rxdart/latest/rx/Observable-class.html)** 을 리턴한다.
 
@@ -148,7 +148,7 @@ RxDart는 기존 Dart Streams API를 `extends` 하고 StreamController의 3가�
 
 *PublishSubject* 와의 차이점은 subscribe 이전의 가장 마지막 *event*도 *listener*에게 보내준다는 것이다.
 
-3. **ReplaySubject**
+3) **ReplaySubject**
 
 **[ReplaySubject](https://pub.dartlang.org/documentation/rxdart/latest/rx/ReplaySubject-class.html)** 도 **broadcast** *StreamController*이고  **Stream** 대신에 **[Observable](https://pub.dartlang.org/documentation/rxdart/latest/rx/Observable-class.html)** 을 리턴한다.
 
@@ -176,11 +176,11 @@ StreamBuilder는 Stream을 listen하고, data가 Stream을 나갈 때마다 자�
 
 밑은 *StreamBuilder* 어떻게 사용해야 하는지 보여준다:
 
-<script src="[https://gist.github.com/boeledi/bc18bcfde9c121e3cf6477f6e03417dc.js](https://gist.github.com/boeledi/bc18bcfde9c121e3cf6477f6e03417dc.js)"></script>
+<script src="https://gist.github.com/boeledi/bc18bcfde9c121e3cf6477f6e03417dc.js"></script>
 
 밑에는 기존에 Flutter project를 생성할 때 자동으로 생성되는 "counter" application을 setState 대신에 Stream을 사용해서 구현한 코드이다.
 
-<script src="[https://gist.github.com/boeledi/215fbbce5d70b941a8c4dbc4633a413e.js](https://gist.github.com/boeledi/215fbbce5d70b941a8c4dbc4633a413e.js)"></script>
+<script src="https://gist.github.com/boeledi/215fbbce5d70b941a8c4dbc4633a413e.js"></script>
 
 코드 설명:
 
