@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "[번역]Flutter(플루터) — Reactive Programming — Streams — BLoC - Part1"
+title: "[번역]Flutter(플루터) — Reactive Programming — Streams — BLoC(블록패턴) - Part1"
 date: 2019-08-14 17:00:00
 author: Dojin Kim
 categories: Flutter
-tags: flutter reactx BLoC
+tags: flutter reactivex BLoC패턴
 cover:  "/assets/imgs/flutter/flutter_cover.png"
 ---
 
 
-> Didier Boelens가 작성한 Flutter의 Bloc Pattern에 대한 본문을 공부하면서 번역을 진행했다. Flutter의 Bloc Pattern을 공부할 때 아마 가장 많은 사람들이 참고한 article이라고 생각한다.
+> Didier Boelens가 작성한 Flutter의 Bloc Pattern에 대한 [본문](https://medium.com/flutter-community/reactive-programming-streams-bloc-6f0d2bd2d248)을 공부하면서 번역을 진행했다. Flutter의 Bloc Pattern을 공부할 때 아마 가장 많은 사람들이 참고한 article이라고 생각한다.
 
 Streams, Bloc 그리고 Reactive Programming에 대한 개념, 이론과 예시들 포함되어있다. 
 
