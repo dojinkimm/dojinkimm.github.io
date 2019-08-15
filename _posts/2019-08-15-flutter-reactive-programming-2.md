@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[번역]Flutter(플루터) — Reactive Programming — Streams — BLoC(블록패턴) - Part2"
-date: 2019-08-14 17:00:00
+date: 2019-08-15 17:00:00
 author: Dojin Kim
 categories: Flutter
 tags: flutter reactivex BLoC패턴
