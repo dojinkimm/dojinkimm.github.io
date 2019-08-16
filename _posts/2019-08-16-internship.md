@@ -76,7 +76,6 @@ Tensorflow가 Pytorch보다 YOLOv3에서는 속도가 약간 빨랐다. 하지�
 
 GPU 2대를 full로 활용해서 object detection을 하면 프로그램의 속도를 늘릴 수 있을 것이라고 생각했다. 그래서 수동으로 multithreading을 사용해서 GPU에 비디오 프레임을 할당하는 프로그램을 개발했다. [Multithreading GPU](https://github.com/dojinkimm/ObjectDetection_MultiThreading_Tensorflow) 에 가면 Tensorflow로 multithrading을 사용해서 수동으로 GPU를 할당한 프로그램을 볼 수 있다. GPU 2대에 할당했다고 해서 속도가 2배로 빨라지지는 않았지만 전체 시간은 줄어들어서 유의미한 결과가 나왔다.
 
-<img src="/assets/imgs/daily/hancome-intern-6.gif"/>
 
 ### 심심한데 GUI
 
