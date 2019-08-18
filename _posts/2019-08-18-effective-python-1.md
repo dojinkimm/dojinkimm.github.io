@@ -21,6 +21,7 @@ Python Enhancement Proposal #8, 짧게 줄여서 [PEP 8](https://www.python.org/
 ### Naming
 
 - 함수, 변수, 속성의 이름은 lowercase_underscore 형식이어야 한다.
+
 ```python
 def multiply_ten(a):
     return a*10
@@ -28,6 +29,7 @@ def multiply_ten(a):
 school_name = "H"
 print(multiply_ten(10))
 ```
+
 
 - Protected 인스턴스 속성은 _leading_underscore 형식이어야 한다.
 - Private 인스턴스 속성은 __double_leading_underscore 형식이어야 한다.
