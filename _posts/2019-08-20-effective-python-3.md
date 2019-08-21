@@ -5,7 +5,7 @@ date: 2019-08-20 17:00:00
 author: Dojin Kim
 categories: Python
 tags: python effective_python 
-cover:  "/assets/instacode.png"
+cover:  "/assets/imgs/python_cover.jpg"
 ---
 
 > Effective Python - Brett Slatkin을 읽으면서 공부 및 정리를 하며 글을 쓰고 있습니다. Python을 잘쓰기 위한 총 59가지의 방법을 소개하고 있다. 다만, post에서는 많이 헷갈려하고, 알면 도움이 될만한 방법들 위주로 소개할 예정이다.
