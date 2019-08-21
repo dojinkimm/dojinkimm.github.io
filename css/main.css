@@ -1,0 +1,7 @@
+.skill{
+    display: flex;
+}
+.skills imgs{
+    flex: 16.6%;
+    padding: 5px;
+}
