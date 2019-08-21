@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Effective Python] Classes and Inheritance - __call__, @classmethod"
+title: "[Effective Python] Classes and Inheritance - __call__, @classmethod, super, mixin"
 date: 2019-08-22 17:00:00
 author: Dojin Kim
 categories: Python
@@ -10,9 +10,9 @@ cover:  "/assets/imgs/python_cover.jpg"
 
 > Effective Python - Brett Slatkin을 읽으면서 공부 및 정리를 하며 글을 쓰고 있습니다.
 
-# Item 23.__call__
+# Item 23.  \__call__
 
-__call__ 은 helper class로 함수가 호출될 때 인자로 들어가지면 사용되는 함수이다. 이 함수가 왜 필요한지 알아보기 위해서 이 함수를 사용하지 않을 때의 경우를 보려고 한다.
+`__call__` 은 helper class로 함수가 호출될 때 인자로 들어가지면 사용되는 함수이다. 이 함수가 왜 필요한지 알아보기 위해서 이 함수를 사용하지 않을 때의 경우를 보려고 한다.
 
 ```python
 def log_missing():
@@ -38,9 +38,9 @@ dictionary를 만들 때 current라는 dictionary만 넣어준 것이 아니라 
 
 하지만, class의 형태로 만드는 것이 언제나 더 reusable하기 때문에 class로 만드는 것이 더 좋다. helper function이기 때문에 method의 이름을 어떻게 정해야하는지가 애매하다. 이러한 상황에 따로 method명을 주지 않고 `__call__` 을 사용하면 된다.
 
-밑에 코드를 설명하자면, 일단 `counter=CountMissing()`으로 instance화를 했다. `defaultdict`를  생성할 때 이 class를 전달하는 것처럼 보이지만, 실제로는 __call__ 함수가 전달된 것이다. 그래서 defaultdict에 새로운 key가 추가될 때 마다 `self.added+=1` 계산이 이뤄지게 되는 것이다. 
+밑에 코드를 설명하자면, 일단 `counter=CountMissing()`으로 instance화를 했다. `defaultdict`를  생성할 때 이 class를 전달하는 것처럼 보이지만, 실제로는 `__call__` 함수가 전달된 것이다. 그래서 defaultdict에 새로운 key가 추가될 때 마다 `self.added+=1` 계산이 이뤄지게 되는 것이다. 
 
-__call__은 인스턴스 자체가 아닌 함수를 전달해야 하는 부분에서 따로 counter.__call__ 같은 명령어 없이 __call__함수를 전달하는 역할을 한다.
+`__call__`은 인스턴스 자체가 아닌 함수를 전달해야 하는 부분에서 따로 counter.__call__ 같은 명령어 없이 `__call__`함수를 전달하는 역할을 한다.
 
 ```python
 class CountMissing(object):
@@ -63,7 +63,7 @@ assert counter.added == 2
 
 다른 언어에서는 constructor polymorphosm을 지원해서 subclass가 generic하게 사용될 수 있게 한다. Python에서 문제점은 **init**이라는 single constructor method만 지원한다는 것이다. 그럼에도 generic한 method를 만드는 것은 프로그램의 reusability(재활용성)을 위해 꼭 필요한 부분이다. 이러한 문제점을 해결하는 것이 바로 Python의 **`@classmethod`**이다.
 
-일단 `**@classmethod**`가 있는 함수는 `cls` 를 첫 인자로 받는다 (이름은 달라도 된다). `cls` 는 class가 인자로 전달된다는 의미이다.
+일단 **`@classmethod`**가 있는 함수는 `cls` 를 첫 인자로 받는다 (이름은 달라도 된다). `cls` 는 class가 인자로 전달된다는 의미이다.
 
 ```python
 from datetime import date 
