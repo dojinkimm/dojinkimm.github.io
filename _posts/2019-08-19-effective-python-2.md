@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[Effective Python] Pythonic thinking - enumerate, zip,  try-except-else-finally"
+title: "[파이썬 코딩의 기술] 파이썬다운 생각 - enumerate, zip, try-except-else-finally"
 date: 2019-08-19 15:00:00
 author: Dojin Kim
 categories: Python
-tags: python effective_python 
+tags: python effective_python 파이썬코딩의기술
 cover:  "/assets/imgs/python_cover.jpg"
 ---
 

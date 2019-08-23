@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "[Effective Python] Pythonic thinking - style guide, bytes str, list comprehension"
+title: "[파이썬 코딩의 기술] 파이썬다운 생각 - PEP8, bytes str, list comprehension, generator"
 date: 2019-08-18 17:00:00
 author: Dojin Kim
 categories: Python
-tags: python effective_python 
+tags: python effective_python 파이썬코딩의기술
 cover:  "/assets/imgs/python_cover.jpg"
 ---
 
 > Effective Python - Brett Slatkin을 읽으면서 공부 및 정리를 하며 글을 쓰고 있습니다. Python을 잘쓰기 위한 총 59가지의 방법을 소개하고 있다. 다만, post에서는 많이 헷갈려하고, 알면 도움이 될만한 방법들 위주로 소개할 예정이다.
 
-# Item 2. Style Guide
+# Item 2. PEP 8 스타일 가이드를 따르자
 
 Python Enhancement Proposal #8, 짧게 줄여서 [PEP 8](https://www.python.org/dev/peps/pep-0008/), 라는 것이 있는데 이는 Python 코드를 작성하는 스타일 가이드를 말한다.
 
@@ -64,7 +64,7 @@ cv2.CV_CAP_PROP_FPS
 - 비어있지 않는 value 확인할 때도 비슷하다.
 - `import ...` 는 항상 파일 맨 위에 위치한다.
 
-# Item 3. bytes, str 차이
+# Item 3. bytes, str 차이점을 알자
 
 Python3 에서 
 
@@ -129,7 +129,7 @@ for sublist1 in my_lists:
 ```
 
 
-# Item 9. Generator
+# Item 9. List Comprehension 클 때는 Generator 사용하기
 
 또한, list comprehension이 매우 크다면 `Generator` 사용을 고려해야 한다. Input이 매우 크면 시간도 매우 오래 걸릴뿐더러 메모리도 많이 잡아먹기 때문이다. Generator는 전체 output을 한번에 연산을 하는 것이 아니라 iterator로 해당하는 expression에 도달하면 item을 하나씩 yield를 한다.
 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[Effective Python] Classes and Inheritance - __call__, @classmethod, super, mixin"
+title: "[파이썬 코딩의 기술] 클래스와 상속 - __call__, @classmethod, super, mixin"
 date: 2019-08-22 17:00:00
 author: Dojin Kim
 categories: Python
-tags: python effective_python 
+tags: python effective_python 파이썬코딩의기술
 cover:  "/assets/imgs/python_cover.jpg"
 ---
 
@@ -92,7 +92,7 @@ print (person2.age) # 21
 - class 자체를 인자로 받기 때문에 class에 접근할 수 있다, object instance 아님.
 - class instance에 영향을 줄 수 있는 class의 state을 수정할 수 있다. 예) class 변수를 수정하면 모든 인instance에서도 변경이 된다.
 
-# Item 25. Initialize Parent Classes with super
+# Item 25. super로 부모 클래스를 초기화하기
 
 예전에 child class에서 parent class 초기화하려면 바로 parent class의 `__init__` method를 호출했다. 이 방법은 간단한 hierarchy에서만 잘 작동한다.
 
@@ -166,7 +166,7 @@ SuperWay(5)를 호출하면 TimesFive.__init__가 호출되고, 이는 PlusTwo._
 2. PlusTwo.__init__을 통해 value += 2가 되서 value는 7이 된다
 3. TimesFive.__init__을 통해 value *= 5가 되서 value는 35가 된다.
 
-{% highlight python %}
+```python
 from pprint import pprint
 pprint(SuperWay.mro())
 """
@@ -175,14 +175,14 @@ pprint(SuperWay.mro())
 <class ‘__main__.PlusTwo’>,
 <class ‘__main__.MyBaseClass’>,<class ‘object’>]
 """
-{% endhighlight %}
+```
 
 ### Python3
 
 Python3에서는 위와 같은 헷갈리는 구문들을 조금 더 확실하게 수정했다. `__class__` 변수를 사용해서 현재 class를 reference할 수 있게 했다. 그리고 self의 값을 더 자세하게 작성하도록 했다. 밑에 코드는 Python2에서는 돌아가지 않는다, 왜냐하면 `super`가 다르게 구현됐기 때문이다.
 
 
-{% highlight python %}
+```python
 class Explicit(MyBaseClass):
     def __init__(self, value):
         super(__class__, self).__init__(value * 2)
@@ -190,15 +190,14 @@ class Explicit(MyBaseClass):
 class Implicit(MyBaseClass):
     def __init__(self, value):
         super().__init__(value * 2)
-{% endhighlight %}
+```
    
 
-# Item 26. Multiple Inheritance는 Mix-in Utility
-Classes에만 사용하기
+# Item 26. Multiple Inheritance는 Mix-in Utility Classes에만 사용하기
 
 Multiple inheritance는 코드를 복잡하게 만들기 때문에 피하는 것이 좋다. 그럼에도 multiple inheritance를 사용해야 한다면 `mix-in`을 사용하는 것을 고려해야 한다. `mix-in`은 작은 class여서 class가 제공해야 하는 method 몇개만 제공한다, 그리고 `__init__`을 정의하지 않아도 된다. 
 
-{% highlight python %}
+```python
 # binary tree를 dictionary로 표현하게 하는 class이다.
 class ToDictMixin(object):
     def to_dict(self):
@@ -221,7 +220,7 @@ class ToDictMixin(object):
             return self._traverse_dict(value.__dict__)
         else:
             return value
-{% endhighlight %}
+```
 
  
 
@@ -229,7 +228,7 @@ class ToDictMixin(object):
 
 Python에서는 2가지의 visibility가 있다: public, private. Private만 변수 이름 앞에 `__ (double underscore)`을 가지고 있다.
 
-{% highlight python %}
+```python
 class MyObject(object):
     def __init__(self):
         self.public_field = 5
@@ -241,34 +240,36 @@ class MyObject(object):
     @classmethod
     def get_private_field_of_instance(cls, instance):
         return instance.__private_field
-{% endhighlight %}
+```
 
 public은 object에 dot operator를 사용하면 접근이 가능하다.
 
-{% highlight python %}
+```python
 foo = MyObject()
 assert foo.public_field == 5 
 
 foo.__private_field 
 # AttributeError: ‘MyObject’ object has no attribute ‘__private_field’
 
-{% endhighlight %}
+```
 
 반면에, private field들은 외부에서 접근을 할 수 없고 class내에 method에서만 접근이 가능하다. @classmethod도 private attribute에 접근 가능하다.
 
 Inherit한 child에서 parent의 private field에 접근할 수 없다. 컴파일러가MyChildObject.get_private_field method를 보면 __private_field가 _MyChildObject**.**__private_field를 접근하게 한다. 하지만 __private_field는 그 parent class에서 정의돼있기 때문에 에러가 발생한다.
 
-{% highlight python %}
+```python
 class MyChildObject(MyObject):
         def get_private_field(self):
             return self.__private_field
 
 baz = MyChildObject()
 baz.get_private_field()
-{% endhighlight %}
+```
 
 그래서 parent class에 있는 private field에 접근하기 위해서는 다른 방법으로 호출해야 한다.
 
-```assert baz._MyParentObject__private_field == 71```
+```python
+assert baz._MyParentObject__private_field == 71
+```
 
 여기서 한가지 의문점이 들 수 있다: 왜 private attribute 접근하는 것에 대해 rule이 그렇게 strict하지 않는가? 이에 대한 답은 Python에 모토에서 찾아볼 수 있다 "We are all consenting adults here." Python은 이렇게 public을 선언해서 접근성을 열어두는 것이 접근성을 낮추는 것보다 장점이 더 크다고 생각한다.

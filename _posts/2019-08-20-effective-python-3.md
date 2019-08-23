@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "[Effective Python] Functions - Closures, Positional, Keyword Arguments"
+title: "[파이썬 코딩의 기술] 함수 - Closures, Positional, Keyword Arguments"
 date: 2019-08-20 17:00:00
 author: Dojin Kim
 categories: Python
-tags: python effective_python 
+tags: python effective_python 파이썬코딩의기술
 cover:  "/assets/imgs/python_cover.jpg"
 ---
 
