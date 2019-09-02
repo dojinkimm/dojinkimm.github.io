@@ -17,10 +17,10 @@ When a word s is given, a function must return a letter in the center. If the wo
 
 단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.
 
-
+## Java
 
 <h3>My Solution</h3>
-```
+```java
 class Solution {
   public String solution(String s) {
       String answer = "";
@@ -32,7 +32,7 @@ class Solution {
 ```
 
 <h3>Best solution</h3>
-```
+```java
  String getMiddle(String word){
 
         return word.substring((word.length()-1) / 2, word.length()/2 + 1);

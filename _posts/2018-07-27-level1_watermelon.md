@@ -14,10 +14,10 @@ cover:  "/assets/instacode.png"
 
 예를 들어, n 이 3이면 "수박수" 4이면 "수박수박"을 리턴한다
 
-
+## Java
 
 <h3>My Solution</h3>
-```
+```java
 class Solution {
   public String solution(int n) {
       String answer = "";
@@ -31,7 +31,7 @@ class Solution {
 ```
 
 <h3>Best solution</h3>
-```
+```java
 
 public String watermelon(int n){
 

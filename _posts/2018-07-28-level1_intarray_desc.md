@@ -15,8 +15,10 @@ cover:  "/assets/instacode.png"
 
 
 
+## Java
+
 <h3>My Solution</h3>
-```
+```java
 import java.util.*;
 
 class Solution {
@@ -34,7 +36,7 @@ class Solution {
 
 
 <h3>Best solution</h3>
-```
+```java
   public int reverseInt(int n){
 
         String str = Integer.toString(n);
@@ -44,6 +46,14 @@ class Solution {
         return Integer.parseInt(((sb.reverse()).toString()));
     }
 
+```
+
+## Python
+
+```python
+def solution(n):
+    answer = sorted(str(n), reverse=True)
+    return int("".join(answer)) 
 ```
 
 

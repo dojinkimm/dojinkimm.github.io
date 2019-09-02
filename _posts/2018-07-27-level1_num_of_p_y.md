@@ -14,8 +14,11 @@ cover:  "/assets/instacode.png"
 
 예를들어 s가 pPoooyY면 true를 return하고 Pyy라면 false를 return합니다.
 
+
+## Java
+
 <h3>My Solution</h3>
-```
+```java
 import java.util.*;
 
 class Solution {
@@ -37,7 +40,7 @@ class Solution {
 ```
 
 <h3>Best solution</h3>
-```
+```java
 class Solution {
     boolean solution(String s) {
         s = s.toUpperCase();

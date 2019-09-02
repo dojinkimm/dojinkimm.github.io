@@ -16,8 +16,10 @@ s는 영문 대소문자로만 구성되어 있으며, 대문자는 소문자보
 
 예를들어 s가 Zbcdefg면 gfedcbZ을 리턴한다.
 
+## Java
+
 <h3>My Solution</h3>
-```
+```java
 import java.util.*;
 class Solution {
   public String solution(String s) {
@@ -31,7 +33,7 @@ class Solution {
 ```
 
 <h3>Best solution</h3>
-```
+```java
 import java.util.Arrays;
 
 public class ReverseStr {

@@ -17,8 +17,10 @@ cover:  "/assets/instacode.png"
 12의 약수는 1, 2, 3, 4, 6, 12입니다. 이를 모두 더하면 28입니다.
 
 
+## Java
+
 <h3>My Solution</h3>
-```
+```java
 class Solution {
   public int solution(int n) {
       int answer = 0;
@@ -33,7 +35,7 @@ class Solution {
 ```
 
 <h3>Best solution</h3>
-```
+```java
 
   public int sumDivisor(int num) {
         int answer = 0;

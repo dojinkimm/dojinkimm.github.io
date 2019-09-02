@@ -10,7 +10,7 @@ cover:  "/assets/instacode.png"
 
 ## Problem: Determining square root of a number.
 When given a random long n, we are trying to determine whether a number has a square root.
-```python
+```java
 if (it has a square root called 'x') {
       return 'x+1' * 'x+1' ;
 }else { return -1 }
@@ -23,7 +23,11 @@ if (it has a square root called 'x') {
 n이 정수 x의 제곱이라면 (x+1)^2을 리턴하고, 
 n이 정수 x의 제곱이 아니라면 -1을 리턴하는 함수를 완성하세요.
 
-```python
+
+## Java
+
+<h3>My Solution</h3>
+```java
 class Solution {
   public long solution(long n) {
       long answer = 0; 

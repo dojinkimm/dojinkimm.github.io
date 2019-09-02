@@ -20,10 +20,10 @@ array의 각 element 중 divisor로 나누어 떨어지는 값을 오름차순�
 
 예를들어) arr 가 [5,9,7,10]이고 divisor가 5이면 [5,10]을 리턴한다.
 
-
+## Java
 
 <h3>My Solution</h3>
-```
+```java
 import java.util.*;
 class Solution {
   public int[] solution(int[] arr, int divisor) {
@@ -53,7 +53,7 @@ class Solution {
 ```
 
 <h3>Best solution</h3>
-```
+```java
 public int[] divisible(int[] array, int divisor) {
         //ret에 array에 포함된 정수중, divisor로 나누어 떨어지는 숫자를 순서대로 넣으세요.
         return Arrays.stream(array).filter(factor -> factor % divisor == 0).toArray();

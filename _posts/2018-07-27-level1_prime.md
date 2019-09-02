@@ -18,10 +18,10 @@ cover:  "/assets/instacode.png"
 예를 들어, n 이 10이면 [2,3,5,7] 이 소수이니 4를 리턴합니다.
 
 
-
+## Java
 
 <h3>My Solution</h3>
-```
+```java
 class Solution {
   public int solution(int n) {
       int answer = 0;
@@ -48,7 +48,7 @@ class Solution {
 ```
 
 <h3>Best solution</h3>
-```
+```java
 
  int numberOfPrime(int n) {
         int result = 0;

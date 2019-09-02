@@ -17,9 +17,10 @@ cover:  "/assets/instacode.png"
 arr = [1, 1, 3, 3, 0, 1, 1] 이면 [1, 3, 0, 1] 을 return 합니다.
 arr = [4, 4, 4, 3, 3] 이면 [4, 3] 을 return 합니다.
 
+## Java
 
 <h3>My Solution</h3>
-```
+```java
 import java.util.*;
 
 public class Solution {
@@ -38,7 +39,7 @@ public class Solution {
 ```
 
 <h3>Best solution</h3>
-```
+```java
 import java.util.*;
 
 public class Solution {
