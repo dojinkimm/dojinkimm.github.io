@@ -54,15 +54,13 @@ Unstable Sorting 알고리즘은 다음과 같다:
 Inplace 알고리즘이란 추가적인 메모리 공간을 많이 필요로 하지 않는 혹은 전혀 필요하지 않는 알고리즘을 의미한다. 통상적으로, 공간은 O(logn)이고 O(n)이 될 때도 있다.  
 
 즉, n 길이의 리스트가 있고, 이 리스트를 정렬할 때 추가적으로 메모리 공간을 할당하지 않아도 정렬이 이뤄진다면 in-place 알고리즘이라고 불릴 수 있는 것이다.
-<div align="center">
-<img src="/assets/imgs/cs/inplace.png" width=250/>
-</div>
 
-In-place하지 않은 알고리즘은 n 길이의 리스트를 정렬할 때 n 만큼의 메모리보다 더 많은 메모리 공간을 할당한디. 즉, 이런 알고리즘들은 space complexity가 높다. 
 
-<div align="center">
-<img src="/assets/imgs/cs/notinplace.png" width=250/>
-</div>
+<img src="/assets/imgs/cs/inplace.png"/>
+
+In-place하지 않은 알고리즘은 n 길이의 리스트를 정렬할 때 n 만큼의 메모리보다 더 많은 메모리 공간을 할당한다. 즉, 이런 알고리즘들은 space complexity가 높다. 
+
+<img src="/assets/imgs/cs/notinplace.png"/>
 
 
 
