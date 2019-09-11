@@ -5,7 +5,7 @@ date: 2019-09-10 13:00:00
 author: Dojin Kim
 categories: CS
 tags: cs stable_sort algorithm
-cover:  "/assets/algorithm_background.jpg"
+cover:  "/assets/imgs/algorithm_background.jpg"
 ---
 
 # Stable Sort
