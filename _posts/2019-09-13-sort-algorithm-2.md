@@ -12,7 +12,7 @@ cover:  "/assets/imgs/algorithm_background.jpg"
 
 # Selection Sort
 <div align="center">
-<img src="/assets/imgs/cs/selection_sort_pseudo.png" width=400/>
+<img src="/assets/imgs/cs/selection_sort_pseudo.png" style="width:400px"/>
 </div>
 
 위는 Selection Sort(선택정렬)의 pseudo-코드이다. i가 1부터 시작하지만, 가장 첫 Index를 의미하고 프로그램을 할 때는 0 index이다. 알고리즘은 매 iteration마다 2가지 동작을 수행한다. list내에서 가장 작은 값을 찾고 list앞에다 정렬한다. 그 다음에 정렬된 값보다 하나 큰 값에서 다시 같은 알고리즘을 적용한다. <br/>
@@ -29,12 +29,13 @@ cover:  "/assets/imgs/algorithm_background.jpg"
 한 iteration에 list내의 모든 item을 살펴보고, 이러한 과정을 list의 길이만큼 진행하기 때문에 이 sorting algorithm의 시간 복잡도는 `O(n^2)`가 되는 것이다. iteration 수는 언제나 ist 길이와 같기 때문에 average와 worst case에서의 시간복잡도가 같다.
 
 <div align="center">
-<img src="/assets/imgs/cs/selection_sort.jpg" width=400/>
+<img src="/assets/imgs/cs/selection_sort.jpg" style="width:400px"/>
 </div>
+
 
 <div align="center">
 
-source: [stackoverflow_selection_sort](https://stackoverflow.com/questions/36700830/selection-sort-algorithm)
+source: <a href="https://stackoverflow.com/questions/36700830/selection-sort-algorithm">stackoverflow_selection_sort</a>
 
 </div>
 
