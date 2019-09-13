@@ -12,7 +12,7 @@ cover:  "/assets/imgs/algorithm_background.jpg"
 
 # Insertion Sort
 <div align="center">
-<img src="/assets/imgs/cs/insertion_sort_pseudo.png" width=400/>
+<img src="/assets/imgs/cs/insertion_sort_pseudo.png" style="width:400px"/>
 </div>
 
 
@@ -34,12 +34,12 @@ step별로 풀어보면 다음과 같다:
 
 
 <div align="center">
-<img src="/assets/imgs/cs/insertion_sort.png" width=400/>
+<img src="/assets/imgs/cs/insertion_sort.png" style="width:400px"/>
 </div>
 
 <div align="center">
 
-source: [geeks-for-geeks-insertion-sort](https://www.geeksforgeeks.org/recursive-insertion-sort/)
+source: <a href="https://www.geeksforgeeks.org/recursive-insertion-sort/">geeks-for-geeks-insertion-sort</a>
 
 </div>
 
