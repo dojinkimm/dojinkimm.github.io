@@ -3,8 +3,8 @@ layout: post
 title: "Insertion Sort, 삽입 정렬이란?"
 date: 2019-09-13 14:00:00
 author: Dojin Kim
-categories: CS
-tags: cs insertion_sort algorithm
+categories: Algorithm
+tags: insertion_sort algorithm
 cover:  "/assets/imgs/algorithm_background.jpg"
 ---
 
@@ -87,9 +87,9 @@ print(insertion)
 ## 다른 Sorting 알고리즘
 - [Selection Algorithm(선택정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-2.html)
 - [Bubble Algorithm(버블정렬)](https://dojinkimm.github.io/cs/2019/09/14/sort-algorithm-4.html)
+- [Quick Algorithm(퀵정렬)](https://dojinkimm.github.io/cs/2019/09/15/sort-algorithm-5.html)
 
 ## 추후 추가될 예정
-- Quick Algorithm(퀵정렬)
 - Merge Algorithm(머지 정렬)
 - Heap Sort(힙 정렬)
 - Radix Sort(래딕스 정렬)

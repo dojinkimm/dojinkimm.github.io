@@ -3,8 +3,8 @@ layout: post
 title: "Stable Sort, inplace algorithm이란? 왜 중요한가?"
 date: 2019-09-10 13:00:00
 author: Dojin Kim
-categories: CS
-tags: cs stable_sort algorithm
+categories: Algorithm
+tags: stable_sort algorithm
 cover:  "/assets/imgs/algorithm_background.jpg"
 ---
 
