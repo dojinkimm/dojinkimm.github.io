@@ -15,7 +15,7 @@ cover:  "/assets/imgs/algorithm_background.jpg"
 <img src="/assets/imgs/cs/bubble_sort_pseudo.png" style="width:400px"/>
 </div>
 
-
+### Pseudo-code 설명
 위는 Bubble Sort(버블정렬)의 pseudo-코드이다. 정렬을 한다고 했을 때 가장 떠올리기 쉽고 구현하기 쉬운 알고리즘이라고 생각한다. 처음에 2개씩 비교를 하면서 왼쪽이 오른쪽보다 크면 바꿔서 가장 큰 값이 iteration 마다 맨 뒤에 위치하게 한다. (반대로 가장 작은 값을 맨 앞으로 위치하게 만들 수 있다)
 <br/>
 이 pseudo-코드대로 진행하면 다음과 같다:
@@ -75,12 +75,12 @@ print(bubble)
 
 
 ## 다른 Sorting 알고리즘
-- [Selection Algorithm(선택정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-2.html)
-- [Insertion Algorithm(삽입정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-3.html)
-- [Quick Algorithm(퀵정렬)](https://dojinkimm.github.io/cs/2019/09/15/sort-algorithm-5.html)
+- [Selection Sort(선택정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-2.html)
+- [Insertion Sort(삽입정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-3.html)
+- [Quick Sort(퀵정렬)](https://dojinkimm.github.io/cs/2019/09/15/sort-algorithm-5.html)
 
 ## 추후 추가될 예정
-- Merge Algorithm(머지 정렬)
+- Merge Sort(머지 정렬)
 - Heap Sort(힙 정렬)
 - Radix Sort(래딕스 정렬)
 - Count Sort(카운트 정렬)

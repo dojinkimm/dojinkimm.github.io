@@ -15,6 +15,8 @@ cover:  "/assets/imgs/algorithm_background.jpg"
 <img src="/assets/imgs/cs/selection_sort_pseudo.png" style="width:400px"/>
 </div>
 
+
+### Pseudo-code 설명
 위는 Selection Sort(선택정렬)의 pseudo-코드이다. i가 1부터 시작하지만, 가장 첫 Index를 의미하고 프로그램을 할 때는 0 index이다. 알고리즘은 매 iteration마다 2가지 동작을 수행한다. list내에서 가장 작은 값을 찾고 list앞에다 정렬한다. 그 다음에 정렬된 값보다 하나 큰 값에서 다시 같은 알고리즘을 적용한다. <br/>
 
 글로 풀어보면 다음과 같다:
@@ -78,12 +80,12 @@ print(selection)
 
 
 ## 다른 Sorting 알고리즘
-- [Insertion Algorithm(삽입정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-3.html)
-- [Bubble Algorithm(버블정렬)](https://dojinkimm.github.io/cs/2019/09/14/sort-algorithm-4.html)
-- [Quick Algorithm(퀵정렬)](https://dojinkimm.github.io/cs/2019/09/15/sort-algorithm-5.html)
+- [Insertion Sort(삽입정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-3.html)
+- [Bubble Sort(버블정렬)](https://dojinkimm.github.io/cs/2019/09/14/sort-algorithm-4.html)
+- [Quick Sort(퀵정렬)](https://dojinkimm.github.io/cs/2019/09/15/sort-algorithm-5.html)
 
 ## 추후 추가될 예정
-- Merge Algorithm(머지 정렬)
+- Merge Sort(머지 정렬)
 - Heap Sort(힙 정렬)
 - Radix Sort(래딕스 정렬)
 - Count Sort(카운트 정렬)

@@ -15,9 +15,10 @@ cover:  "/assets/imgs/algorithm_background.jpg"
 <img src="/assets/imgs/cs/quick_sort_pseudo.png" style="width:600px"/>
 </div>
 
-Quick sort는 `Divide and Conquer(분할 정복)` 알고리즘 종류중 하나이다. 분할정복이란 주어진 문제를 여러 sub 문제들로 나눈 다음에 그 문제들을 해결한 다음에 합치는 것을 의미한다. Quicksort는 임의의 숫자를 기준으로 정한 다음에 그 숫자보다 작은 숫자들과 큰 숫자들에 다시 재귀를 사용해서 quick sort 알고리즘을 적용한다. 그러면 다시 그 분할된 숫자들 중에서 기준을 정하고 나눠서 quick sort를 진행한다. 
+Quick sort는 `Divide and Conquer(분할 정복)` 알고리즘 종류중 하나이다. 분할정복이란 주어진 문제를 여러 sub 문제들로 나눈 다음에 그 문제들을 해결한 다음에 합치는 것을 의미한다. 
 
-조금 더 자세히 설명하면, 임의의 숫자를 고르고 나서 해당 숫자보다 작은 숫자들을 왼쪽에 위치시키고, 해당 숫자보다 큰 숫자들을 오른쪽에 위치시킨다. 그러고 나서 정해진 임의의 숫자를 그 중간에 위치시키는 것이다.
+### Pseudo-code 설명
+Quicksort는 임의의 숫자를 기준으로 정한 다음에 그 숫자보다 작은 숫자들과 큰 숫자들에 다시 재귀를 사용해서 quick sort 알고리즘을 적용한다. 그러면 다시 그 분할된 숫자들 중에서 기준을 정하고 나눠서 quick sort를 진행한다. 조금 더 자세히 설명하면, 임의의 숫자를 고르고 나서 해당 숫자보다 작은 숫자들을 왼쪽에 위치시키고, 해당 숫자보다 큰 숫자들을 오른쪽에 위치시킨다. 그러고 나서 정해진 임의의 숫자를 그 중간에 위치시키는 것이다.
 
 `Partition` 부분을 자세히 살펴보기 전에 각 인자들이 무엇을 의미하는지 보려고 한다. `A`는 주어진 list이다. `p`는 주어진 list의 lower part로 list의 시작 부분을 의미하고, `r`은 주어진 list의 higher part로 list의 끝 부분을 의미한다.
 
@@ -98,12 +99,12 @@ print(quick.num)
 
 
 ## 다른 Sorting 알고리즘
-- [Selection Algorithm(선택정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-2.html)
-- [Insertion Algorithm(삽입정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-3.html)
-- [Bubble Algorithm(버블정렬)](https://dojinkimm.github.io/cs/2019/09/14/sort-algorithm-4.html)
+- [Selection Sort(선택정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-2.html)
+- [Insertion Sort(삽입정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-3.html)
+- [Bubble Sort(버블정렬)](https://dojinkimm.github.io/cs/2019/09/14/sort-algorithm-4.html)
 
 ## 추후 추가될 예정
-- Merge Algorithm(머지 정렬)
+- Merge Sort(머지 정렬)
 - Heap Sort(힙 정렬)
 - Radix Sort(래딕스 정렬)
 - Count Sort(카운트 정렬)

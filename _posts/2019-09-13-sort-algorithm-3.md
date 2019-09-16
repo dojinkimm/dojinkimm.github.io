@@ -15,7 +15,7 @@ cover:  "/assets/imgs/algorithm_background.jpg"
 <img src="/assets/imgs/cs/insertion_sort_pseudo.png" style="width:400px"/>
 </div>
 
-
+### Pseudo-code 설명
 위는 Insertion Sort(삽입정렬)의 pseudo-코드이다. j가 2부터 시작하고 이는 list내 2번째 item을 의미한다, 즉, 프로그래밍할 때는 index 1을 의미한다. 이 알고리즘은 list를 iterate하면서 list 앞 쪽부터 정렬을 해나간다. 정렬을 하고 나서 그 다음 item으로 이동하고 해당 item을 정렬된 왼쪽 list에 정렬된 순서에 삽입을 한다. <br/>
 
 step별로 풀어보면 다음과 같다:
@@ -85,12 +85,12 @@ print(insertion)
 
 
 ## 다른 Sorting 알고리즘
-- [Selection Algorithm(선택정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-2.html)
-- [Bubble Algorithm(버블정렬)](https://dojinkimm.github.io/cs/2019/09/14/sort-algorithm-4.html)
-- [Quick Algorithm(퀵정렬)](https://dojinkimm.github.io/cs/2019/09/15/sort-algorithm-5.html)
+- [Selection Sort(선택정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-2.html)
+- [Bubble Sort(버블정렬)](https://dojinkimm.github.io/cs/2019/09/14/sort-algorithm-4.html)
+- [Quick Sort(퀵정렬)](https://dojinkimm.github.io/cs/2019/09/15/sort-algorithm-5.html)
 
 ## 추후 추가될 예정
-- Merge Algorithm(머지 정렬)
+- Merge Sort(머지 정렬)
 - Heap Sort(힙 정렬)
 - Radix Sort(래딕스 정렬)
 - Count Sort(카운트 정렬)
