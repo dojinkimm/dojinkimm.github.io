@@ -4,7 +4,7 @@ title: "Selection Sort, 선택 정렬이란?"
 date: 2019-09-13 13:00:00
 author: Dojin Kim
 categories: Algorithm
-tags: stable_sort algorithm
+tags: selection_sort algorithm
 cover:  "/assets/imgs/algorithm_background.jpg"
 ---
 
