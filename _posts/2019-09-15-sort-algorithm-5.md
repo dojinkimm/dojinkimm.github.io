@@ -99,10 +99,10 @@ print(quick.num)
 
 
 ## 다른 Sorting 알고리즘
-- [Selection Sort(선택정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-2.html)
-- [Insertion Sort(삽입정렬)](https://dojinkimm.github.io/cs/2019/09/13/sort-algorithm-3.html)
-- [Bubble Sort(버블정렬)](https://dojinkimm.github.io/cs/2019/09/14/sort-algorithm-4.html)
-- [Merge Sort(합병정렬)](https://dojinkimm.github.io/cs/2019/09/18/sort-algorithm-6.html)
+- [Selection Sort(선택정렬)](https://dojinkimm.github.io/algorithm/2019/09/13/sort-algorithm-2.html)
+- [Insertion Sort(삽입정렬)](https://dojinkimm.github.io/algorithm/2019/09/13/sort-algorithm-3.html)
+- [Bubble Sort(버블정렬)](https://dojinkimm.github.io/algorithm/2019/09/14/sort-algorithm-4.html)
+- [Merge Sort(합병정렬)](https://dojinkimm.github.io/algorithm/2019/09/18/sort-algorithm-6.html)
 
 ## 추후 추가될 예정
 - Heap Sort(힙 정렬)
