@@ -57,7 +57,7 @@ Heap sort는 추가적인 메모리를 사용하지 않고 하나의 array로 so
 
 
 <div align="center">
-<img src="/assets/imgs/cs/merge_sort.jpg" width=650/>
+<img src="/assets/imgs/cs/heap_sort.jpg" width=650/>
 </div>
 
 그림을 보면서 Heap sort 진행과정을 하나씩 살펴보려고 한다. 머리속으로 진행과정을 그리면서 보면 이해가 어느정도 갈 것입니다.
