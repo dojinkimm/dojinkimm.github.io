@@ -79,9 +79,9 @@ print(bubble)
 - [Insertion Sort(삽입정렬)](https://dojinkimm.github.io/algorithm/2019/09/13/sort-algorithm-3.html)
 - [Quick Sort(퀵정렬)](https://dojinkimm.github.io/algorithm/2019/09/15/sort-algorithm-5.html)
 - [Merge Sort(합병정렬)](https://dojinkimm.github.io/algorithm/2019/09/18/sort-algorithm-6.html)
+- [Heap Sort(힙 정렬)](https://dojinkimm.github.io/algorithm/2019/09/19/sort-algorithm-7.html)
 
 ## 추후 추가될 예정
-- Heap Sort(힙 정렬)
 - Radix Sort(래딕스 정렬)
 - Count Sort(카운트 정렬)
 - Bucket Sort(버킷 정렬)
