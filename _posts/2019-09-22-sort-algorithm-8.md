@@ -18,13 +18,13 @@ Counting Sort(계수정렬)은 숫자들간 **비교를 하지 않고 정렬을*
 3. **k=O(n)**으로 나타나질 수 있어야 한다
 
 <div align="center">
-<img src="/assets/imgs/cs/counting_sort_pseudo.png" width=650/>
+<img src="/assets/imgs/cs/counting_sort_pseudo.png" style="width:500px"/>
 </div>
 
 이제 pseudo 코드를 라인별로 분석해보려고 한다.
 
 <div align="center">
-<img src="/assets/imgs/cs/counting_sort_1.png" width=500/>
+<img src="/assets/imgs/cs/counting_sort_1.png" style="width:500px"/>
 </div>
 
 A라는 정렬되지 않은 리스트를 정렬하고자 한다. 
@@ -32,7 +32,7 @@ A라는 정렬되지 않은 리스트를 정렬하고자 한다.
 - **라인 1~2** : C라는 리스트를 새로 만드는데, 이 C의 길이는 **k**이다. Counting sort의 범위는 0\~k가 되어야 한다고 했고, 현재 주어진 리스트에서 k는 5이다. 그래서 0~5, 총 길이 6인 C리스트가 만들어지는 것이다.
 
 <div align="center">
-<img src="/assets/imgs/cs/counting_sort_2.png" width=500/>
+<img src="/assets/imgs/cs/counting_sort_2.png" style="width:500px"/>
 </div>
 
 - **라인 3~4**: 이제 C라는 리스트에 각각 element들이 몇개인지 추가를 한다. 초기에 C는 0으로 초기화 되있고, A를 0번째 index부터 길이까지 순회를 하면서 해당되는 값을 C에 1씩 더해나간다. `C[A[j]] = C[A[j]] + 1` 이 부분을 예시로 설명해보자면,
@@ -44,13 +44,13 @@ A라는 정렬되지 않은 리스트를 정렬하고자 한다.
 이런 식으로 진행하다보면 0이 몇개인지, 1이 몇개인지...k가 몇개인지 C 리스트를 통해서 알 수 있게 된다.
 
 <div align="center">
-<img src="/assets/imgs/cs/counting_sort_3.png" width=500/>
+<img src="/assets/imgs/cs/counting_sort_3.png" style="width:500px"/>
 </div>
 
 - **라인 5~6**: C 리스트의 element들을 누적값으로 바꾼다. 0번째 index는 그대로 두고, 1번째 index는 이전값에 자신의 값을 더한다 2+0 = 2, 2번째 index도 이전 값에 자신을 더한다 2+2=4....이렇게 더하다 보면 C의 맨 마지막 element는 당연하게도 **A의 길이**가 된다.
 
 <div align="center">
-<img src="/assets/imgs/cs/counting_sort_4.png" width=500/>
+<img src="/assets/imgs/cs/counting_sort_4.png" style="width:500px"/>
 </div>
 
 - **라인 7~9**: 마지막 for loop에서는 C로 정렬된 B 리스트를 만들어낸다. A의 값을 보고 그 값을 index 삼아서 C의 값을 본다. C의 값을 index삼아서 A의 값을 B에 넣고, 누적 C의 값을 -1 해준다. 말이 어렵기 때문에 한 단계씩 살펴보자
