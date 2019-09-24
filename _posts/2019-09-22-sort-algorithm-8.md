@@ -95,3 +95,15 @@ print(counting_number)
 count = couting_sort(counting_number, max(counting_number))
 print(count)
 ```
+
+## 다른 Sorting 알고리즘
+- [Selection Sort(선택정렬)](https://dojinkimm.github.io/algorithm/2019/09/13/sort-algorithm-2.html)
+- [Insertion Sort(삽입정렬)](https://dojinkimm.github.io/algorithm/2019/09/13/sort-algorithm-3.html)
+- [Bubble Sort(버블정렬)](https://dojinkimm.github.io/algorithm/2019/09/14/sort-algorithm-4.html)
+- [Quick Sort(퀵정렬)](https://dojinkimm.github.io/algorithm/2019/09/15/sort-algorithm-5.html)
+- [Merge Sort(합병정렬)](https://dojinkimm.github.io/algorithm/2019/09/18/sort-algorithm-6.html)
+- [Heap Sort(힙 정렬)](https://dojinkimm.github.io/algorithm/2019/09/19/sort-algorithm-7.html)
+- [Radix Sort(기수 정렬)](https://dojinkimm.github.io/algorithm/2019/09/24/sort-algorithm-9.html)
+
+## 추후 추가될 예정
+- Bucket Sort(버킷 정렬)
