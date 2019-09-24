@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Counting Sort, 기수 정렬이란?"
+title: "Counting Sort, 계수 정렬이란?"
 date: 2019-09-22 15:00:00
 author: Dojin Kim
 categories: Algorithm
