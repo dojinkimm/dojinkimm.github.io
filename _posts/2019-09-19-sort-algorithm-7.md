@@ -142,7 +142,5 @@ print(heap.num)
 - [Merge Sort(합병정렬)](https://dojinkimm.github.io/algorithm/2019/09/18/sort-algorithm-6.html)
 - [Counting Sort(계수정렬)](https://dojinkimm.github.io/algorithm/2019/09/22/sort-algorithm-8.html)
 - [Radix Sort(기수 정렬)](https://dojinkimm.github.io/algorithm/2019/09/24/sort-algorithm-9.html)
-
-## 추후 추가될 예정
-- Bucket Sort(버킷 정렬)
+- [Bucket Sort(버킷 정렬)](https://dojinkimm.github.io/algorithm/2019/09/28/sort-algorithm-10.html)
 
