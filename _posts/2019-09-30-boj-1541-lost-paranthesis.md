@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[백준 - 파이썬] 1541 - 잃어버린 괄호"
-date: 2019-09-30 15:00:00
+title: "[백준 - 그리디] 1541 - 잃어버린 괄호 - 파이썬"
+date: 2019-09-30 14:00:00
 author: Dojin Kim
 categories: Problem_Solving
 tags: ps algorithm python
