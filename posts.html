@@ -4,8 +4,8 @@ title: "Posts"
 permalink: /posts/
 ---
 {% for category in site.categories reversed%}
-{% capture cat %}{{ category | first }}{% endcapture %}
-  <a href="#{{cat}}"><h4>{{ cat | capitalize }}</h4></a>
+  {% capture cat %}{{ category | first }}{% endcapture %}
+  <a href="#{{cat}}">{{ cat | capitalize }} &ensp; </a>
 {% endfor %}
 
 {% for category in site.categories reversed%}
