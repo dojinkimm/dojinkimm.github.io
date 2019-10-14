@@ -5,7 +5,7 @@ date: 2019-10-14 18:00:00
 author: Dojin Kim
 categories: ML
 tags: cv ml handson 
-cover:  "/assets/imgs/yolo_cover.jpg"
+cover:  "/assets/imgs/ml_cover.jpg"
 ---
 
 #### [Hands On ML](https://www.academia.edu/37010160/Hands-On_Machine_Learning_with_Scikit-Learn_and_TensorFlow)
