@@ -7,6 +7,10 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">Posts in "{{ page.title | capitalize }}"</h1>
   </header>
+  {% for category in site.categories reversed%}
+  {% capture cat %}{{ category | first }}{% endcapture %}
+  <a href="#{{cat}}"><h4>{{ cat | capitalize }}</h4></a>
+  {% endfor %}
 
   {% include page_divider.html %}
 
