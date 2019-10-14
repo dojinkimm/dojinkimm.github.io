@@ -3,8 +3,8 @@ layout: post
 title: "[CNetwork] Chapter 1. Computer Networks and the Internet"
 date: 2018-08-28 17:00:00
 author: Dojin Kim
-categories: Network
-tags: network
+categories: CS
+tags: network cs
 cover:  "/assets/imgs/network_cover.jpg"
 ---
 
