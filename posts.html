@@ -7,7 +7,7 @@ permalink: /posts/
   {% capture cat %}{{ category | first }}{% endcapture %}
   <strong><a href="#{{cat}}">{{ cat | capitalize }}</a></strong> &nbsp; 
 {% endfor %}
-<br/>
+<br><br>
 
 {% for category in site.categories reversed%}
   {% capture cat %}{{ category | first }}{% endcapture %}
