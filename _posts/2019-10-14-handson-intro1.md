@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[핸즈온 머신러닝] ML 종류들"
+title: "[핸즈온 머신러닝-1] ML 종류들"
 date: 2019-10-14 17:00:00
 author: Dojin Kim
 categories: ML

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[핸즈온 머신러닝] Batch vs Online 학습 / Instance vs Model 기반 학습 / Testing & Validating"
+title: "[핸즈온 머신러닝-1] Batch vs Online 학습 / Instance vs Model 기반 학습 / Testing & Validating"
 date: 2019-10-14 18:00:00
 author: Dojin Kim
 categories: ML
