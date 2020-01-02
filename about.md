@@ -11,7 +11,7 @@ permalink: /about/
 
 실제로 프로덕트를 만들어보고 싶어서 Flutter를 공부하다가,
 
-현재는 ML에 관심을 갖고 공부를 하며 개발을 하고 있습니다.
+현재는 ML과 백엔드에 관심을 갖고 공부를 하며 개발을 하고 있습니다.
 
 [Github]: https://github.com/dojinkimm
 
