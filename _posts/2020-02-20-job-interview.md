@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: "신입 개발자의 IT 스타트업 취업 후기"
 date: 2020-02-20 14:00:00
@@ -6,7 +6,7 @@ author: Dojin Kim
 categories: Job
 tags: startup job interview
 cover:  "/assets/instacode.png"
----
+--- -->
 
 # 신입 개발자의 IT 스타트업 취업 후기
 
