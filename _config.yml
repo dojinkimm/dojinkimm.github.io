@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Henry Study
-subtitle: "블로그 migration중 - https://devjin-blog.com/"
+title: Study Blog
+subtitle: 블로그 migration중 - https://devjin-blog.com/
 email: dojinkim119@gmail.com
 name: Kim Dojin
 description: >
