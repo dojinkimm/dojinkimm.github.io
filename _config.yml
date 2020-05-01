@@ -10,11 +10,11 @@ exclude:
 
 # Site settings
 title: Henry Study
-subtitle: "하루하루 배우고 느낀 것을 적는 스터디 블로그"
+subtitle: "블로그 migration중 - https://devjin-blog.com/"
 email: dojinkim119@gmail.com
 name: Kim Dojin
 description: >
-  하루하루 배우고 느낀 것을 적는 스터디 블로그
+  블로그 migration중 - https://devjin-blog.com/
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
