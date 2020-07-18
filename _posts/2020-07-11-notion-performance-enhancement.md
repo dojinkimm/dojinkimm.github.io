@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [(번역) Case study - Notion은 app performance를 어떻게 향상시켰는가?](https://devjin-blog.com/notion-performance-enhancement/)
+title: "[번역] Case study - Notion은 app performance를 어떻게 향상시켰는가?"
 date: 2020-07-11 12:00:00
 author: Dojin Kim
 categories: Web
