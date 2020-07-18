@@ -23,11 +23,11 @@ Notion앱이 고질적인 performance 문제를 어떻게 해결했는지에 대
 
 Notion 앱의 최대 단점은 시작 시간이었고, 이는 소비자들이 가장 많이 불평하던 부분이었다. 
 
-![twitter1.png](./images/twitter1.png)
+![twitter1.png](images/twitter1.png)
 
 그러나, 최근에 Notion은 이 부분을 개선하기 위해 상당히 노력했고, 상당 부분 개선되었다. 이제 리버스 엔지니어링을 통해 어떻게 최적화가 되었는지 살펴보려고 한다.
 
-![twitter2.png](./images/twitter2.png)
+![twitter2.png](images/twitter2.png)
 
 
 # 🧐 How Notion loads
@@ -38,13 +38,13 @@ Notion은 리액트 웹앱이다. 시작 시간이 길다는 것은 `웹의 로�
 
 Web 파트가 어떻게 로딩되는지 보기 위해, notion 앱의 public page를 새로 만들어 보고 [WebPageTest](https://webpagetest.org/)(performance 테스팅 툴) audit을 실행 해봤다. WebPageTest는 아주 유용한 정보들을 제공해주고, 그 중 로딩 waterfall(로딩 실행 흐름)을 보여 준다.
 
-![load6.png](./images/load6.png)
+![load6.png](images/load6.png)
 
 
 조금 자세히 들여다보자
 
 
-![load1.png](./images/load1.png)
+![load1.png](images/load1.png)
 
 1. 처음에 페이지를 열면, 페이지는 몇개의 stylesheet과 2개의 JS bundle을 load 한다 - `vendor`와 `앱`
 2. Bundle들이 로드되고 나서 실행을 한다 - 거의 1초가 걸림
@@ -52,11 +52,11 @@ Web 파트가 어떻게 로딩되는지 보기 위해, notion 앱의 public page
 4. 추가적인 코드를 실행한다.
 5. 5.6초가 되었을 때, 첫 번째 paint가 보이게 된다. 그리고 spinner만....보인다. 
 
-    ![loading_image_1.png](./images/loading_image_1.png)
+    ![loading_image_1.png](images/loading_image_1.png)
 
 6. 6.2초쯤 되었을 때, page content가 실제로 렌더링 된다.
 
-    ![loading_image_2.png](./images/loading_image_2.png)
+    ![loading_image_2.png](images/loading_image_2.png)
 
 모든 hero image들을 load하기 까지는 몇 초가 더 걸린다.
 
@@ -73,17 +73,17 @@ Desktop에서도 6.2초는 꽤 긴 시간이지만, 중간 티어의 모바일 �
 
 Networking performance와 다르게 processing performance는 네트워크가 좋아진다고 나아지지 않는다. 오히려 유저 기기의 CPU에 따라서 이 시간이 달라진다. (특히 안드로이드 폰에서 매우 느리다....)
 
-![phone_perf.png](./images/phone_perf.png)
+![phone_perf.png](images/phone_perf.png)
 
 Networking cost는 앱에 캐싱하면 해결하기 쉽다. 하지만, processing cost는 앱이 시작될 때마다 내야하는 cost이다. 
 
 테스트를 했을 때 Nexus 5에서, `vendor`와 `app` bundle을 execut하는데 약 4.9초가 걸렸다. 이 시간 동안 유저들은 비어있는 페이지를 보게 된다. 
 
-![load2.png](./images/load2.png)
+![load2.png](images/load2.png)
 
 그럼 이 시간동안 뭐가 일어나는가? WebPageTest는 JS의 trace를 기록하지 않기 때문에 DevTools로 가서 local audit을 실행하면 뭐가 일어나는지 볼 수 있다.
 
-![load3.png](./images/load3.png)
+![load3.png](images/load3.png)
 
 처음에 `vendor` bundle이 컴파일 될 때까지 약 0.4초가 걸린다. 그 다음에, `app` bundle이 컴파일 될 때까지 약 1.2초가 걸린다. 마지막으로, 두 bundle이 실행되는데 3.3초가 걸린다.
 
@@ -93,7 +93,7 @@ Networking cost는 앱에 캐싱하면 해결하기 쉽다. 하지만, processin
 
 Bundle의 실행 phase를 봐보자. 
 
-![load4.png](./images/load4.png)
+![load4.png](images/load4.png)
 
 
 - 4글자 함수들은 (e.g. `bkwR` or `Cycz`) application module들이다.
@@ -147,10 +147,10 @@ Notion 앱은 page가 없고, code-splitting below-the-fold는 Notion의 페이�
 - _Heave page 블록_. 몇몇 page 블록들은 매우 무겁다, 예를 들어, 68개의 언어를 highlight하는 Code 블록은 120+개의 minified된 KBs를 Prism.js에서 가져와서 bunlde화 한다. Notion은 이미 몇개의 블록들은 split하고 있다 (e.g. Math equation). 이는 다른 블록들에도 적용될만 하다.
 
 Sidebar과 자주 사용되지 않은 UI들
-![sidebar.png](./images/sidebar.png)
+![sidebar.png](images/sidebar.png)
 
 무거운 block들
-![pageblock.png](./images/pageblock.png)
+![pageblock.png](images/pageblock.png)
 
 
 
@@ -170,7 +170,7 @@ module concatenation이 제대로 작동하는지 확인하려면:
 >
 > 하지만 이 부분을 최적화 할 수 있는 [방법은 거의 없다](https://github.com/webpack/webpack/issues/2219).
 
-![webpack_load1.png](./images/webpack_load1.png)
+![webpack_load1.png](images/webpack_load1.png)
 
 ## 3. Try `lazy` option of Babel's `plugin-transform-modules-commonjs`
 
@@ -217,13 +217,13 @@ exports.getToday = function getToday() {
 > 
 > Notion을 예로 들면, 39%의 vendor bundle과 61%의 app bundle이 page가 render된 다음에 사용되지 않는다.
 
-![devtool1.png](./images/devtool1.png)
+![devtool1.png](images/devtool1.png)
 
 # 🗑️ Remove unused JS code
 
 Bundle initialization trace를 다시 봐보자.
 
-![load5.png](./images/load5.png)
+![load5.png](images/load5.png)
 
 여기서 `Compile Script`라는 부분이 약 1.6초가 걸린다 (1,2번 부분). 그렇다면 이게 뭘까?
 
@@ -241,7 +241,7 @@ V8 (Chrome의 JS 엔진)은 다른 JS 엔진들처럼 [JIT 컴파일](https://bl
 
 Page가 load될 때 약 40%의 Notion의 `vendor` bundle이 사용되지 않고 있었다.
 
-![devtool2.png](./images/devtool2.png)
+![devtool2.png](images/devtool2.png)
 
 몇몇의 코드들은 나중에 유저가 필요로 하면 사용될 수 있다. 하지만 얼마나 사용될 것인가?
 
@@ -283,7 +283,7 @@ Notion은 source map을 publish 하지 않는다, 이 말은 즉슨, bundle을 e
 
 `vendor` bundle에 있는 큰 dependency중 하나는 `core-js` 라이브러리의 polyfills이다.
 
-![devtool3.png](./images/devtool3.png)
+![devtool3.png](images/devtool3.png)
 
 2가지 문제가 있다.
 
@@ -295,7 +295,7 @@ Notion은 source map을 publish 하지 않는다, 이 말은 즉슨, bundle을 e
 
 **여러번 bundle 한다**. `vendor` bundle은 `core-js`의 copyright을 3번 포함한다. 매번 copyright은 동일하지만, 다른 module로 ship 된다.
 
-![devtool4.png](./images/devtool4.png)
+![devtool4.png](images/devtool4.png)
 
 `core-js`가 3번 bundle됨을 의미한다. 왜 이런 일이 일어나는지 조금 깊이 파보려고 한다.
 
@@ -328,7 +328,7 @@ minified된 코드에서는 각각
 
 에 해당한다. Bundle에서 이 module ID를 따라가보면 밑과 같은 것을 볼 수 있다.
 
-![devtool5.png](./images/devtool5.png)
+![devtool5.png](images/devtool5.png)
 
 위가 의미하는 것은 3개의 `core-js` 버전이:
 
@@ -346,7 +346,7 @@ minified된 코드에서는 각각
 
 이제 Notion loading의 다른 부분들을 살펴보자
 
-![load6.png](./images/load6.png)
+![load6.png](images/load6.png)
 
 - API request는 bundle이 완전히 다운로드 되기전까지 시작되지 않는다
 - Contentful paint는 대부분의 API request가 완료 되기 전까지 발생하지 않는다. (35개의 request를 기다린다)
@@ -401,7 +401,7 @@ async function installThirdParties() {
 
 Notion에서 page가 렌더링 되기 전에 브라우저는 9개의 request를 API로 보낸다.
 
-![load7.png](./images/load7.png)
+![load7.png](images/load7.png)
 
 각 request는 70~500ms 걸린다. 어떤 request들은 순차적으로 이뤄져서 이전 request가 완료되어야지만 실행되는 경우도 있다. 이런 느린 API request가 latency에 악영향을 줄 수 있음을 의미한다. 
 
@@ -483,17 +483,17 @@ Notion은 response의 header에 `Cache-Control`을 설정하고 있지 않다. C
 
 버그들을 방지하기 위해서는, 올바른 `Cache-Control` header가 bundle asset과 API response에 설정되어야 한다.
 
-![twitter3.png](./images/twitter3.png)
+![twitter3.png](images/twitter3.png)
 
 ## 2. Loading skeleton
 
 Notion 앱은 원래 page가 로딩 될 떄 spinner를 보여줬었다.
 
-![spinner.png](./images/spinner.png)
+![spinner.png](images/spinner.png)
 
 Spinner는 뭔가가 로딩된다는 것을 잘 보여주지만, 가끔 performance가 더 안 좋다고 느끼게 하는 경우가 있다. Spinner가 보이면 더 앱이 느려 보이는 경향이 있다.  이 부분은 skeleton UI를 사용해서 해결을 했다.
 
-![skeleton.png](./images/skeleton.png)
+![skeleton.png](images/skeleton.png)
 
 # Summing up
 
