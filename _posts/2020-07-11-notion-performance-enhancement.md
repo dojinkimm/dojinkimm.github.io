@@ -53,12 +53,12 @@ Web 파트가 어떻게 로딩되는지 보기 위해, notion 앱의 public page
 4. 추가적인 코드를 실행한다.
 5. 5.6초가 되었을 때, 첫 번째 paint가 보이게 된다. 그리고 spinner만....보인다. 
 
-    ![loading_image_1.png](images/loading_image_1.png)
+    <img src="/posts/images/loading_image_1.png"/>
 
 6. 6.2초쯤 되었을 때, page content가 실제로 렌더링 된다.
 
-    ![loading_image_2.png](images/loading_image_2.png)
-
+    <img src="/posts/images/loading_image_2.png"/>
+    
 모든 hero image들을 load하기 까지는 몇 초가 더 걸린다.
 
 Desktop에서도 6.2초는 꽤 긴 시간이지만, 중간 티어의 모바일 폰에서는 시작 시간이 12.6초까지 늘어난다. 
@@ -329,7 +329,7 @@ minified된 코드에서는 각각
 
 에 해당한다. Bundle에서 이 module ID를 따라가보면 밑과 같은 것을 볼 수 있다.
 
-![devtool5.png](images/devtool5.png)
+<img src="/posts/images/devtool5.png"/>
 
 위가 의미하는 것은 3개의 `core-js` 버전이:
 
