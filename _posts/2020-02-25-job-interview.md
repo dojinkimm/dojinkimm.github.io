@@ -6,6 +6,7 @@ author: Dojin Kim
 categories: Job
 tags: startup job interview
 cover:  "/assets/instacode.png"
+redirect_to: https://devjin-blog.com/job-interview/
 ---
 
 # 신입 개발자의 IT 스타트업 취업 후기
