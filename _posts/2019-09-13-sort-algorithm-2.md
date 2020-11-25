@@ -6,6 +6,7 @@ author: Dojin Kim
 categories: Algorithm
 tags: selection_sort algorithm
 cover:  "/assets/imgs/algorithm_background.jpg"
+redirect_to: https://devjin-blog.com/sort-algorithm-2/
 ---
 
 > CS 기초 알고리즘들을 다시 공부하며 글로 기록을 남기는 중입니다.
