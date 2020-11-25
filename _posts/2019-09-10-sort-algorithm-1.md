@@ -6,6 +6,7 @@ author: Dojin Kim
 categories: Algorithm
 tags: stable_sort algorithm
 cover:  "/assets/imgs/algorithm_background.jpg"
+redirect_to: https://devjin-blog.com/sort-algorithm-1/
 ---
 
 # Stable Sort
