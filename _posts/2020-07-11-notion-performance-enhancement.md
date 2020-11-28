@@ -6,6 +6,7 @@ author: Dojin Kim
 categories: Web
 tags: web
 cover:  "/assets/instacode.png"
+redirect_to: https://devjin-blog.com/notion-performance-enhancement/
 ---
 
 

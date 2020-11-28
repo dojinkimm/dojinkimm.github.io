@@ -6,6 +6,7 @@ author: Dojin Kim
 categories: CS
 tags: cs network 
 cover:  "/assets/imgs/network_cover.jpeg"
+redirect_to: https://devjin-blog.com/what-happen-browser-search/
 ---
 
 #### [What happens when you type an URL in the browser and press enter?](https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a) - 본문

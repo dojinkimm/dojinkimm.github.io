@@ -6,6 +6,7 @@ author: Dojin Kim
 categories: Daily
 tags: object_detection Tensorflow Pytorch Intern
 cover:  "/assets/instacode.png"
+redirect_to: https://devjin-blog.com/internship/
 ---
 
 

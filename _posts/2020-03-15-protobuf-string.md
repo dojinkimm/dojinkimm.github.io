@@ -6,6 +6,7 @@ author: Dojin Kim
 categories: Golang
 tags: golang
 cover:  "/assets/instacode.png"
+redirect_to: https://devjin-blog.com/protobuf/
 ---
 
 
